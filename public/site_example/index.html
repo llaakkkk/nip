@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>
+<html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <title>Заголовок</title>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css"/>
+    <link rel="stylesheet" href="libs/countdown/jquery.countdown.css"/>
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+</head>
+<body>
+<header class="top_header">
+    <div class="header_topline">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <button class="auth_buttons hidden-md hidden-lg hidden-sm"><i class="fa fa-user"></i></button>
+                    <div class="top_links">
+                        <a href="#">Про проект</a>
+                        <a href="#">Контакти</a>
+                    </div>
+                    <div class="soc_buttons">
+                        <a href="#"><i class="fa fa-vk"></i></a>
+                        <a href="#"><i class="fa fa-skype"></i></a>
+                        <a href="#"><i class="fa fa-git-square"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="cotainer">
+        <div class="col-md-12">
+            <div class="row">
+                <a href="#" class="logo"><img class="logo_img" src="images/logo.png"></a>
+                <nav class="main_menu clearfix">
+                    <button class="main_menu_button hidden-md hidden-lg">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <ul>
+                        <li><a href="#">Програма</a></li>
+                        <li><a href="#">Доповнення</a></li>
+                        <li><a href="#">Відгуки</a></li>
+                        <li><a href="#">Портфоліо</a></li>
+                    </ul>
+                    <div class="top_contacts"><i class="fa fa-mobile fa-fw fa-lg"></i>0-800-504-30-24</div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slider_container">
+                    <div class="next_button"><i class="fa fa-chevron-right"></i></div>
+                    <div class="carousel">
+                        <div class="slider_item">
+                            <img src="images/bg1.jpg" alt>
+
+                            <div class="main-header">
+                                <h1>Навчальний ресурс з вивчення мови програмування Python</h1>
+                            </div>
+                        </div>
+                        <div class="slider_item"><img src="images/bg2.jpg" alt></div>
+                        <div class="slider_item"><img src="images/bg3.jpg" alt></div>
+                    </div>
+
+                </div>
+                <div class="prev_button"><i class="fa fa-chevron-left"></i></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="form-login parallax-window" data-parallax="scroll" data-image-src="images/bg4.jpg" data-bleed="23">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="login-tabs"></div>
+                    <div role="tabpanel" class="tabpanel">
+                        <ul class="nav nav-tabs" role="tablist" id="myTab">
+                            <li role="presentation" class="active"><a href="#signin" aria-controls="home" role="tab" data-toggle="tab">Реєстрація</a></li>
+                            <li role="presentation"><a href="#login" aria-controls="profile" role="tab" data-toggle="tab">Увійти</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="signin">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="inputEmail1" class="col-sm-4 control-label">Імейл</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" class="form-control" id="inputEmail1" placeholder="Імейл">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Юзернейм</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" class="form-control" id="inputUserName" placeholder="Юзернейм">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword1" class="col-sm-4 control-label">Пароль</label>
+                                        <div class="col-sm-8">
+                                            <input type="password" class="form-control" id="inputPassword1" placeholder="Пароль">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-4 col-sm-8">
+                                            <button type="submit" class="btn btn-default">Розпочати!</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane" id="login">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="inputEmail2" class="col-sm-4 control-label">Імейл</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" class="form-control" id="inputEmail2" placeholder="Імейл">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword2" class="col-sm-4 control-label">Пароль</label>
+                                        <div class="col-sm-8">
+                                            <input type="password" class="form-control" id="inputPassword2" placeholder="Пароль">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-4 col-sm-8">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Запам'ятати мене
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-4 col-sm-8">
+                                            <button type="submit" class="btn btn-default">Увійти</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+<section class="main_content">
+    <div class="container">
+        <div class="col-md-8">
+            <div class="container-text">
+                <div class="blog-item">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Header of an article</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/bg4.jpg" alt=""/>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda aut blanditiis
+                                corporis, dolore error et, expedita harum laboriosam, repellat tenetur totam voluptatem?
+                                Ad architecto dicta dolores officia officiis tempora!</p>
+
+                            <p>Ab, architecto asperiores deleniti dolorum et facilis labore natus, obcaecati possimus
+                                quasi quia repellendus repudiandae sit sunt vel! Eius hic, nostrum officiis placeat quae
+                                quos recusandae ullam. Commodi, dolore, provident?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Header of an article</h3>
+                        </div>
+
+                        <div class="col-md-8">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda aut blanditiis
+                                corporis, dolore error et, expedita harum laboriosam, repellat tenetur totam voluptatem?
+                                Ad architecto dicta dolores officia officiis tempora!</p>
+
+                            <p>Ab, architecto asperiores deleniti dolorum et facilis labore natus, obcaecati possimus
+                                quasi quia repellendus repudiandae sit sunt vel! Eius hic, nostrum officiis placeat quae
+                                quos recusandae ullam. Commodi, dolore, provident?</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/bg4.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Header of an article</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/bg4.jpg" alt=""/>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda aut blanditiis
+                                corporis, dolore error et, expedita harum laboriosam, repellat tenetur totam voluptatem?
+                                Ad architecto dicta dolores officia officiis tempora!</p>
+
+                            <p>Ab, architecto asperiores deleniti dolorum et facilis labore natus, obcaecati possimus
+                                quasi quia repellendus repudiandae sit sunt vel! Eius hic, nostrum officiis placeat quae
+                                quos recusandae ullam. Commodi, dolore, provident?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <aside>
+
+            </aside>
+        </div>
+    </div>
+
+</section>
+<section id="benefits" class="benefits">
+    <div class="benefits-about">
+        <div class="container">
+            <div class="row header">
+                <h3>Переваги</h3>
+
+                <p>Навчатися - ніколи не пізно.</p>
+            </div>
+            <div class="row ">
+                <div class="col-md-3">
+                    <div class="section">
+                        <div class="pic">
+                            <img src="images/read.png" alt="read" class="img-responsive"/>
+                        </div>
+                        <div class="info">
+                            <strong>Читай!</strong>
+
+                            <p>
+                                Ресурс має власну бібліотеку, що надає можливість читати необхідну літературу як онлайн,
+                                так і завантаживши її на власний ПК.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="section">
+                        <div class="pic">
+                            <img src="images/write.png" alt="write" class="img-responsive"/>
+                        </div>
+                        <div class="info">
+                            <strong>Занотовуй!</strong>
+
+                            <p>Оскільки ресурси нашої пам'яті не безмежні, для кращого засвоювання матеріалу,
+                                рекомендовано робити нотатки будь-яким зручним для тебе способом.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="section">
+                        <div class="pic">
+                            <img src="images/do-code.png" alt="coding" class="img-responsive"/>
+                        </div>
+                        <div class="info">
+                            <strong>Практикуй!</strong>
+
+                            <p>Основним завданням ресурсу є застосування на практиці теоретичних навичків, програмування
+                                в онлайн режимі.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="section">
+                        <div class="pic">
+                            <img src="images/and.png" alt="study" class="img-responsive"/>
+                        </div>
+                        <div class="info">
+                            <strong>Фінішуй!</strong>
+
+                            <p>По закінченню курсу ти можеш сміливо програмувати, та навіть знайти роботу, оскільки
+                                отриманих знань достатньо для швидкого старту твоєї кар'єри.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+<section>
+    <div class="some-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <div class="about-python">
+                        <h4>Phyton</h4>
+                        <h6>рекомендоване прочитання — «Па́йтон»</h6>
+                            <p> Iнтерпретована об'єктно-орієнтована мова програмування високого рівня з динамічною семантикою.
+                           <p> Розроблена в 1990 році Гвідо ван Россумом.</p>
+                           <p>Структури даних високого рівня разом із динамічною
+                            семантикою та динамічним зв'язуванням роблять її привабливою для швидкої розробки програм,
+                            а також як засіб поєднання існуючих компонентів.</p>
+                       <p> Python підтримує модулі та пакети модулів,
+                            що сприяє модульності та повторному використанню коду. </p>
+                        <p>Інтерпретатор Python та стандартні
+                            бібліотеки доступні як у скомпільованій так і у вихідній формі на всіх основних платформах.
+                        </p>
+                            <p>
+                        В мові програмування Python підтримується декілька парадигм програмування, зокрема:
+                        об'єктно-орієнтована, процедурна, функціональна та аспектно-орієнтована.</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main_footer bg_dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                &copy; 2015 Олена Кірічок
+                <div class="social_wrap">
+                    <ul>
+                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="hidden"></div>
+
+
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="js/common.js"></script>
+<script src="libs/parallax.js-1.3.1/parallax.js"></script>
+<script src="libs/bootstrap/js/bootstrap.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+<script src="libs/countdown/jquery.plugin.js"></script>
+<script src="libs/countdown/jquery.countdown.min.js"></script>
+<script src="libs/countdown/jquery.countdown-ru.js"></script>
+<script src="libs/landing-nav/navigation.js"></script>
+
+
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

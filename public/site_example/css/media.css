@@ -1,0 +1,107 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.main_menu ul {
+ 		display: none;
+ 		position: absolute;
+		background-color: #448bc2;
+		width: 134px;
+		margin: 2px 0 10px;
+ 	}
+ 	.main_menu li {
+		display: block;
+
+ 	}
+ 	.main_menu{
+        height: 2.7em;
+        margin-bottom: 10px;
+ 		display: inline-block;
+
+ 	}
+ 	.main_menu a{
+ 		padding: 3px 22px 3px 11px;
+  		margin: 15px;
+	}
+ 	.logo_img{
+ 		height: 100px;
+		margin: -13px 0px 0px 55px;
+ 	}
+ 	.top_contacts{
+ 		line-height: 42px;
+        display: none;
+ 	}
+ 	.next_button, .prev_button{
+ 		display: none;
+ 	}
+ 	section#about {
+  	margin-top: 40px;
+	}
+    .section .info {
+        text-align: right;
+        display: inline-block;
+        width: 40%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.top_links{
+		display:none;
+		position: absolute;
+		background-color: #FFFF54;
+		padding: 10px;
+		width: 113px;
+	}
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.top_links{
+ 		display: inline-block !important;
+ 	}
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.main_menu ul {
+		display:block !important;
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
