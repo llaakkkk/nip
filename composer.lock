@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e75db01fc8cfb3ac69c3e8a5325f72c9",
-    "content-hash": "7ad60934815bef435432922449f3a2e0",
+    "hash": "58f5e607d1d167770e6a7e0ba41c9a3d",
+    "content-hash": "f491c3c985375971eb6d688eb2940873",
     "packages": [
         {
             "name": "anahkiasen/underscore-php",
@@ -381,7 +381,7 @@
         },
         {
             "name": "illuminate/html",
-            "version": "dev-master",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/html.git",
@@ -3690,9 +3690,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "illuminate/html": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

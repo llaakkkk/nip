@@ -155,14 +155,13 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        // should comment
         GrahamCampbell\Parse\ParseServiceProvider::class,
         Orchestra\Parser\XmlServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         DaveJamesMiller\Aliases\AliasesServiceProvider::class,
-        Illuminate\View\ViewServiceProvider::class,
-        Illuminate\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -209,6 +208,7 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        // should comment
         'XmlParser' => Orchestra\Parser\Xml\Facade::class,
         'Form'      => Collective\Html\FormFacade::class,
         'Html'      => Collective\Html\FormFacade::class,
