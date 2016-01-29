@@ -10,9 +10,12 @@
         "graham-campbell/parse": "^2.4",
         "orchestra/parser": "~3.0",
         "twbs/bootstrap": "^3.3",
-        "laravelcollective/html": "~5.0",
+        "laravelcollective/html": "5.2.*",
       "mcamara/laravel-localization": "1.1.*",
-        "barryvdh/laravel-ide-helper": "^2.1"
+        "barryvdh/laravel-ide-helper": "^2.1",
+      "illuminate/html": "~5.0",
+        "davejamesmiller/laravel-aliases": "^1.0"
+
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

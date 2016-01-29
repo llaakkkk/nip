@@ -4,9 +4,19 @@
     <section class="form-login parallax-window" data-parallax="scroll" data-image-src="images/currency.jpg" data-bleed="23">
         <div class="container">
             <div class="row">
+
                 <div class="col-md-offset-3 col-md-6">
+                    @if(Session::get('message'))
+                        <div class="alert alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span></button>
+                            <p class="text-center"> {{Session::get('message')}}</p>
+                        </div>
+                    @endif
                     <div class="login-tabs"></div>
                     <div role="tabpanel" class="tabpanel">
+
                         <ul class="nav nav-tabs" role="tablist" id="myTab">
                             <li role="presentation" class="active"><a href="#currency" aria-controls="home" role="tab" data-toggle="tab">Currency Converter</a></li>
                         </ul>

@@ -10,10 +10,10 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-Route::get('/', function () {
-    return view('main');
-});
+//
+//Route::get('/', function () {
+//    return view('main');
+//});
 
 /*
 |--------------------------------------------------------------------------
@@ -26,13 +26,20 @@ Route::get('/', function () {
 |
 */
 
-Route::group([
-    'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect' ]
-],
-    function(){
+//Route::group([
+//    'prefix' => LaravelLocalization::setLocale(),
+//    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect' ]
+//],
+//    function(){
         Route::get('/',
             ['as' => '/', 'uses' => 'ConverterController@index']);
-        Route::post('/currency/converter', 'ConverterController@formGet');
 
-});
+            Route::get('/result',
+                ['as' => '/result/cool', 'uses' => 'ConverterController@convertResult']
+            );
+        Route::post('/currency', 'ConverterController@formGet');
+//        Route::resource('/currency','ConverterController@formGet');
+//        Route::get('/currency','ConverterController@formGet');
+//        Route::post('/currency','ConverterController');
+//
+//});

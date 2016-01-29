@@ -169,12 +169,13 @@ section#about {
 }
 #benefits {
     margin-top: 20px;
-    height: auto;
+    height: 30em;
+    padding-top: 100px;
     max-width: 100%;
     font-family: "RobotoRegular", sans-serif;
 }
 .benefits{
-    background: #ffff8c;
+    /*background: #ffff8c;*/
 }
 #benefits .header {
     padding-top: 20px;
@@ -235,6 +236,7 @@ section#about {
 }
 .form-login{
     margin: 20px 0;
+    height: 30em;
 }
 .login-tabs{
     z-index: -1;

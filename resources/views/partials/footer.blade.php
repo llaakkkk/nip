@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                &copy; 2015 Олена Кірічок
+                &copy; 2016 Olena Kirichok
                 <div class="social_wrap">
                     <ul>
                         <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>

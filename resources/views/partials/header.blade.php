@@ -5,8 +5,8 @@
                 <div class="row">
                     <button class="auth_buttons hidden-md hidden-lg hidden-sm"><i class="fa fa-user"></i></button>
                     <div class="top_links">
-                        <a href="#">Про проект</a>
-                        <a href="#">Контакти</a>
+                        <a href="#">About Project</a>
+                        <a href="#">Contacts</a>
                     </div>
                     <div class="soc_buttons">
                         <a href="#"><i class="fa fa-vk"></i></a>
@@ -24,16 +24,17 @@
             <div class="row">
                 {{--<a href="#" class="logo"><img class="logo_img" src="images/logo.png"></a>--}}
                 <nav class="main_menu clearfix">
+                    <div class="top_contacts"><i class="fa fa-exchange"></i> Currency Converter</div>
                     <button class="main_menu_button hidden-md hidden-lg">
                         <i class="fa fa-bars"></i>
                     </button>
                     <ul>
-                        <li><a href="#">Програма</a></li>
-                        <li><a href="#">Доповнення</a></li>
-                        <li><a href="#">Відгуки</a></li>
-                        <li><a href="#">Портфоліо</a></li>
+                        <li><a href="#"><img src="" class="flag flag-cz" /></a></li>
+                        <li><a href="#"><img src="" class="flag flag-bo"  /></a></li>
+                        <li><a href="#"><img src="" class="flag flag-za"  /></a></li>
+                        <li><a href="#"><img src="" class="flag flag-ua"  /></a></li>
                     </ul>
-                    <div class="top_contacts"><i class="fa fa-exchange"></i> Currency Converter</div>
+
                 </nav>
             </div>
         </div>

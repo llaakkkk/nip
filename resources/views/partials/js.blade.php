@@ -5,7 +5,6 @@
 <script src="libs/respond/respond.min.js"></script>
 <![endif]-->
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
-<script src="js/common.js"></script>
 <script src="libs/parallax.js-1.3.1/parallax.js"></script>
 <script src="libs/bootstrap/js/bootstrap.js"></script>
 <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
@@ -17,3 +16,4 @@
 <script src="libs/countdown/jquery.countdown.min.js"></script>
 <script src="libs/countdown/jquery.countdown-ru.js"></script>
 <script src="libs/landing-nav/navigation.js"></script>
+<script src="js/common.js"></script>

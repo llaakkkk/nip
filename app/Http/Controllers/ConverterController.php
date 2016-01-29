@@ -3,14 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Jobs\ConverterJob;
-use App\Jobs\TestJob;
-use App\Test;
 use Illuminate\Http\Request;
+use Illuminate\Foundation;
+//use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Redirect;
 
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Orchestra\Parser\Xml\Reader;
 use Orchestra\Parser\Xml\Document;
+
+
+//use Illuminate\Support\Facades\Request;
+
 
 
 class ConverterController extends Controller
@@ -18,6 +22,7 @@ class ConverterController extends Controller
 
     protected $cubes;
     protected $converter;
+
 
     public function __construct()
     {
@@ -49,10 +54,48 @@ class ConverterController extends Controller
 //        Test::all();
     }
 
-    public function formGet($post)
+    public function formGet()
     {
-        var_dump($post);
-        die();
+
+
+        $v = \Validator::make( \Request::all(), [
+            'inputUser' => 'required|max:255',
+            'firstCurrency' => 'required',
+            'secondCurrency' => 'required',
+        ]);
+
+        if ($v->fails())
+        {
+            return redirect()->back()->with('message', 'all fields are required');
+        }
+        else{
+            $input = \Request::all();
+
+            $convert['user_value'] = $input['inputUser'];
+            $convert['first_value'] = explode(" ", $input['firstCurrency']);
+            $convert['second_value'] = explode(" ", $input['secondCurrency']);
+
+            $convert['sum'] = round((($convert['user_value']/floatval($convert['first_value'][0]))*floatval($convert['second_value'][0])), 2);
+
+            return \Redirect::route('/result/cool')->with('convert', $convert);
+        }
+
+    }
+
+    public function convertResult()
+    {
+        $converts = \Session::get('convert');
+
+//            dd($converts);
+        return \View::make('convert')->with([
+            'user_value' => $converts['user_value'],
+            'sum' => $converts['sum'],
+            'first_rate' => $converts['first_value'][0],
+            'first_currency' => $converts['first_value'][1],
+            'second_rate' => $converts['second_value'][0],
+            'second_currency' => $converts['second_value'][1],
+        ]);
+
     }
 
 }
