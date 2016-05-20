@@ -59,9 +59,8 @@ class ConverterController extends Controller
 
 
         $v = \Validator::make( \Request::all(), [
-            'inputUser' => 'required|max:255',
-            'firstCurrency' => 'required',
-            'secondCurrency' => 'required',
+            'inputNip' => 'required|max:10',
+
         ]);
 
         if ($v->fails())
@@ -72,10 +71,7 @@ class ConverterController extends Controller
             $input = \Request::all();
 
             $convert['user_value'] = $input['inputUser'];
-            $convert['first_value'] = explode(" ", $input['firstCurrency']);
-            $convert['second_value'] = explode(" ", $input['secondCurrency']);
 
-            $convert['sum'] = round((($convert['user_value']/floatval($convert['first_value'][0]))*floatval($convert['second_value'][0])), 2);
 
             return \Redirect::route('/result/cool')->with('convert', $convert);
         }

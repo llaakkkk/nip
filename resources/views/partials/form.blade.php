@@ -3,36 +3,7 @@
     <div class="form-group">
         <label for="inputUser" class="col-sm-4 control-label">Enter Your Sum *</label>
         <div class="col-sm-8">
-            <input type="text" name="inputUser" class="form-control" id="inputUser" placeholder="Enter Sum">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="inputFirstCurrency" class="col-sm-4 control-label">Choose your currency *</label>
-        <div class="col-sm-8">
-            <select class="form-control" id="inputFirstCurrency" name="firstCurrency">
-
-                @foreach ($currencies as $item => $rate)
-                    @foreach ($rate as $key => $value)
-                        <option value="{{ $value }} {{$key}}" name="{{ $key }}">{{ $key }}</option>
-
-                    @endforeach
-                @endforeach
-            </select>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label for="inputSecondCurrency" class="col-sm-4 control-label">Choose currency *</label>
-        <div class="col-sm-8">
-            <select class="form-control" id="inputSecondCurrency" name="secondCurrency">
-
-                @foreach ($currencies as $item => $rate)
-                    @foreach ($rate as $key => $value)
-                        <option value="{{ $value }} {{$key}}" name="{{ $key }}">{{ $key }}</option>
-
-                    @endforeach
-                @endforeach
-            </select>
+            <input type="text" name="inputNip" class="form-control" id="inputUser" placeholder="Enter Sum">
         </div>
     </div>
     <div class="form-group">
