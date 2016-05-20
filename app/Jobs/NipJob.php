@@ -9,7 +9,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 
-class ConverterJob extends Job implements ShouldQueue
+class NipJob extends Job implements ShouldQueue
 {
     use InteractsWithQueue, SerializesModels;
 

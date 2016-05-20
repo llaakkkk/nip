@@ -65,6 +65,73 @@ $(document).ready(function() {
         }
 
     }
+    $(document).on('click', 'button#currencyConverter', function(e){
+        var form = $("#nipForm");
+        console.log('here');
+        console.log(form);
+        console.log( form.serialize());
+        e.preventDefault();
+
+        $.ajax({
+            headers:
+            {
+                'X-CSRF-Token': $('input[name="_token"]').val()
+            },
+            url     : form.attr("action"),
+            type    : form.attr("method"),
+            data    : form.serialize(),
+            dataType: "json",
+            success: function (xhr,status, response) {
+                //console.log(response);
+                var success = jQuery.parseJSON(response.responseText)
+                var info = $('#companyName');
+                console.log(success.message);
+
+
+                info.append('<p> To jest  ' + success.message + '</p>');
+                info.append('<a href="/" class="button "> jeszcze raz </a>');
+                var form =  $('#nipForm');
+                form.hide();
+                var info = $('.edit_alert');
+                info.find('ul>li').hide().empty();
+
+            },
+            error: function(xhr,status, response) {
+                var error = jQuery.parseJSON(xhr.responseText);  // this section is key player in getting the value of the errors from controller.
+                var info = $('.edit_alert');
+                info.find('ul>li').hide().empty();
+                for(var k in error.message){
+                    if(error.message.hasOwnProperty(k)){
+                        error.message[k].forEach(function(val){
+                            info.find('ul').append('<li>' + val + '</li>');
+                        });
+
+                    }
+                }
+
+
+            }
+
+        });
+
+
+
+    });
+    $("#inputUser").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                // Allow: Ctrl+A, Command+A
+            (e.keyCode == 65 && ( e.ctrlKey === true || e.metaKey === true ) ) ||
+                // Allow: home, end, left, right, down, up
+            (e.keyCode >= 35 && e.keyCode <= 40)) {
+            // let it happen, don't do anything
+            return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
 
     //
     //

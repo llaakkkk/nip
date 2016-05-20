@@ -10,10 +10,6 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-//
-//Route::get('/', function () {
-//    return view('main');
-//});
 
 /*
 |--------------------------------------------------------------------------
@@ -26,20 +22,12 @@
 |
 */
 
-//Route::group([
-//    'prefix' => LaravelLocalization::setLocale(),
-//    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect' ]
-//],
-//    function(){
-        Route::get('/',
-            ['as' => '/', 'uses' => 'ConverterController@index']);
 
-            Route::get('/result',
-                ['as' => '/result/cool', 'uses' => 'ConverterController@convertResult']
-            );
-        Route::post('/currency', 'ConverterController@formGet');
-//        Route::resource('/currency','ConverterController@formGet');
-//        Route::get('/currency','ConverterController@formGet');
-//        Route::post('/currency','ConverterController');
-//
-//});
+        Route::get('/',
+            ['as' => '/', 'uses' => 'NipController@index']);
+
+        Route::get('/result',
+            ['as' => '/result/cool', 'uses' => 'NipController@convertResult']
+        );
+        Route::post('/getInfo', 'NipController@formGet');
+
