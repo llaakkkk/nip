@@ -40,6 +40,14 @@
 
                                 </div>
                             </div>
+                            <div>
+                                <table>
+                                    @foreach($nips as $nip)
+                                        <td>{{ $nip->nip }}</td>
+                                        <td>{{ $nip->name }}</td>
+                                        @endforeach
+                                </table>
+                            </div>
 
 
                         </div>

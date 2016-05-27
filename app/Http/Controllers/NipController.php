@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Jobs\ConverterJob;
+use App\Nip;
 use Illuminate\Http\Request;
 use Illuminate\Foundation;
 //use Illuminate\Support\Facades\Request;
@@ -26,8 +27,9 @@ class NipController extends Controller
     public function index()
     {
 
+        $nips = Nip::all();
 
-        return \View::make('main');
+        return \View::make('main', ['nips' => $nips]);
 
     }
 

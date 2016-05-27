@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Nip extends Model
 {
+    protected $table = 'nip_companies';
 
 }
